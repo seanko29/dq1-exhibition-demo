@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DQ1 AI视觉引擎 | Synabro Technology</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-mark">S</span>YNABRO
+      </a>
+      <ul class="nav-links">
+        <li><a href="#capabilities">能力总览</a></li>
+        <li><a href="#comparison">效果对比</a></li>
+        <li><a href="#detection">检测分割</a></li>
+        <li><a href="#face">人脸识别</a></li>
+        <li><a href="#ocr">文字识别</a></li>
+        <li><a href="#specs">技术规格</a></li>
+      </ul>
+      <div class="nav-lang">中 / EN</div>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="hero">
+    <div class="hero-grid-bg"></div>
+    <div class="hero-glow"></div>
+    <div class="hero-content fade-in">
+      <div class="hero-chip-badge">
+        <span class="badge-dot"></span>
+        Neural Processing Unit
+      </div>
+      <h1 class="hero-title">
+        DQ1 AI<span class="gradient-text">视觉引擎</span>
+      </h1>
+      <p class="hero-subtitle-en">DQ1 AI Vision Engine</p>
+      <p class="hero-tagline">
+        边缘智能 <span class="dot-sep">&middot;</span>
+        实时推理 <span class="dot-sep">&middot;</span>
+        极致性能
+      </p>
+      <p class="hero-tagline-en">
+        Edge Intelligence &middot; Real-time Inference &middot; Ultimate Performance
+      </p>
+      <div class="hero-specs-ticker">
+        <div class="ticker-track">
+          <span class="ticker-item">4 Tiles &times; 8 Cores</span>
+          <span class="ticker-sep">|</span>
+          <span class="ticker-item">INT8 / INT16</span>
+          <span class="ticker-sep">|</span>
+          <span class="ticker-item">&lt;5ms Latency</span>
+          <span class="ticker-sep">|</span>
+          <span class="ticker-item">&lt;2W Power</span>
+          <span class="ticker-sep">|</span>
+          <span class="ticker-item">4 Tiles &times; 8 Cores</span>
+          <span class="ticker-sep">|</span>
+          <span class="ticker-item">INT8 / INT16</span>
+          <span class="ticker-sep">|</span>
+          <span class="ticker-item">&lt;5ms Latency</span>
+          <span class="ticker-sep">|</span>
+          <span class="ticker-item">&lt;2W Power</span>
+        </div>
+      </div>
+      <a href="#capabilities" class="hero-cta">
+        探索能力 Explore
+        <span class="cta-arrow">&darr;</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ========== CAPABILITIES ========== -->
+  <section class="section capabilities" id="capabilities">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2 class="section-title">AI视觉能力总览</h2>
+        <p class="section-subtitle-en">AI Vision Capabilities Overview</p>
+      </div>
+      <div class="capabilities-grid">
+        <a href="#comparison-sr" class="cap-card fade-in">
+          <div class="cap-icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="6" y="6" width="36" height="36" rx="4"/>
+              <path d="M6 30l10-10 8 8 6-6 12 12"/>
+              <circle cx="16" cy="16" r="3"/>
+            </svg>
+          </div>
+          <h3 class="cap-title">超分辨率</h3>
+          <p class="cap-title-en">Super Resolution</p>
+          <p class="cap-desc">低分辨率图像实时增强至超高清，细节完美重建</p>
+        </a>
+        <a href="#comparison-dn" class="cap-card fade-in">
+          <div class="cap-icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="24" cy="24" r="18"/>
+              <path d="M16 24c2-4 4 2 8-2s4 6 8 0"/>
+              <path d="M15 18l1 1m6-4l-1 2m10 1l-2 0m-2 14l1-1m-12 2l0-2m18-6l-2 1" stroke-dasharray="2 2"/>
+            </svg>
+          </div>
+          <h3 class="cap-title">图像降噪</h3>
+          <p class="cap-title-en">Image Denoising</p>
+          <p class="cap-desc">智能消除图像噪声，暗光环境依然清晰</p>
+        </a>
+        <a href="#detection" class="cap-card fade-in">
+          <div class="cap-icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="8" y="12" width="20" height="16" rx="2" stroke-dasharray="4 2"/>
+              <rect x="20" y="20" width="18" height="14" rx="2"/>
+              <circle cx="29" cy="27" r="3"/>
+              <path d="M6 6l6 6M42 6l-6 6M6 42l6-6M42 42l-6-6"/>
+            </svg>
+          </div>
+          <h3 class="cap-title">目标检测</h3>
+          <p class="cap-title-en">Object Detection</p>
+          <p class="cap-desc">毫秒级多目标实时检测，120+ FPS</p>
+        </a>
+        <a href="#detection" class="cap-card fade-in">
+          <div class="cap-icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 36c0-8 4-16 12-20s12 4 12 12-4 8-12 8-12 4-12 0z"/>
+              <path d="M18 28c2-4 6-6 10-4s4 6 2 10" stroke-dasharray="3 2"/>
+              <circle cx="24" cy="22" r="2" fill="currentColor"/>
+            </svg>
+          </div>
+          <h3 class="cap-title">实例分割</h3>
+          <p class="cap-title-en">Instance Segmentation</p>
+          <p class="cap-desc">像素级物体分割，精确轮廓提取</p>
+        </a>
+        <a href="#face" class="cap-card fade-in">
+          <div class="cap-icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="24" cy="20" r="10"/>
+              <path d="M10 42c0-8 6-14 14-14s14 6 14 14"/>
+              <circle cx="20" cy="18" r="1.5" fill="currentColor"/>
+              <circle cx="28" cy="18" r="1.5" fill="currentColor"/>
+              <path d="M20 24c2 2 6 2 8 0"/>
+            </svg>
+          </div>
+          <h3 class="cap-title">人脸识别</h3>
+          <p class="cap-title-en">Face Recognition</p>
+          <p class="cap-desc">支持口罩识别与活体检测，500+ FPS</p>
+        </a>
+        <a href="#ocr" class="cap-card fade-in">
+          <div class="cap-icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="8" y="6" width="32" height="36" rx="3"/>
+              <line x1="14" y1="14" x2="34" y2="14"/>
+              <line x1="14" y1="20" x2="30" y2="20"/>
+              <line x1="14" y1="26" x2="34" y2="26"/>
+              <line x1="14" y1="32" x2="24" y2="32"/>
+              <rect x="26" y="28" width="10" height="8" rx="1" fill="none" stroke-dasharray="3 1"/>
+            </svg>
+          </div>
+          <h3 class="cap-title">文字识别</h3>
+          <p class="cap-title-en">OCR</p>
+          <p class="cap-desc">多语言文字识别，支持80+语种，99.2%准确率</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== BEFORE/AFTER COMPARISON ========== -->
+  <section class="section comparison" id="comparison">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2 class="section-title">效果对比展示</h2>
+        <p class="section-subtitle-en">Before / After Comparison</p>
+      </div>
+
+      <!-- Super Resolution Slider -->
+      <div class="comparison-block fade-in" id="comparison-sr">
+        <h3 class="comparison-label">超分辨率 Super Resolution</h3>
+        <p class="comparison-desc">低分辨率 &rarr; 超高清 &nbsp;|&nbsp; Low-res &rarr; Ultra HD</p>
+        <div class="comparison-slider" data-before="BEFORE 处理前" data-after="AFTER 处理后">
+          <div class="comparison-before">
+            <div class="placeholder-img placeholder-before-sr">
+              <span class="placeholder-label">低分辨率<br>Low Resolution</span>
+              <span class="placeholder-res">480p</span>
+            </div>
+          </div>
+          <div class="comparison-after">
+            <div class="placeholder-img placeholder-after-sr">
+              <span class="placeholder-label">超高清增强<br>Enhanced Ultra HD</span>
+              <span class="placeholder-res">4K</span>
+            </div>
+          </div>
+          <div class="comparison-handle">
+            <div class="handle-line"></div>
+            <div class="handle-circle">&lsaquo; &rsaquo;</div>
+          </div>
+          <div class="comparison-label-before">BEFORE 处理前</div>
+          <div class="comparison-label-after">AFTER 处理后</div>
+        </div>
+      </div>
+
+      <!-- Denoising Slider -->
+      <div class="comparison-block fade-in" id="comparison-dn">
+        <h3 class="comparison-label">图像降噪 Image Denoising</h3>
+        <p class="comparison-desc">噪声图像 &rarr; 清晰图像 &nbsp;|&nbsp; Noisy &rarr; Clean</p>
+        <div class="comparison-slider" data-before="BEFORE 处理前" data-after="AFTER 处理后">
+          <div class="comparison-before">
+            <div class="placeholder-img placeholder-before-dn">
+              <span class="placeholder-label">噪声图像<br>Noisy Image</span>
+              <span class="placeholder-res">ISO 12800</span>
+            </div>
+          </div>
+          <div class="comparison-after">
+            <div class="placeholder-img placeholder-after-dn">
+              <span class="placeholder-label">清晰图像<br>Clean Image</span>
+              <span class="placeholder-res">Enhanced</span>
+            </div>
+          </div>
+          <div class="comparison-handle">
+            <div class="handle-line"></div>
+            <div class="handle-circle">&lsaquo; &rsaquo;</div>
+          </div>
+          <div class="comparison-label-before">BEFORE 处理前</div>
+          <div class="comparison-label-after">AFTER 处理后</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== DETECTION & SEGMENTATION ========== -->
+  <section class="section detection" id="detection">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2 class="section-title">智能检测与分割</h2>
+        <p class="section-subtitle-en">Intelligent Detection &amp; Segmentation</p>
+      </div>
+
+      <div class="detection-stats fade-in">
+        <div class="stat-chip">
+          <span class="stat-label">检测目标</span>
+          <span class="stat-value counter" data-target="12">0</span>
+        </div>
+        <div class="stat-chip">
+          <span class="stat-label">推理时间</span>
+          <span class="stat-value"><span class="counter" data-target="3.2" data-decimals="1">0</span>ms</span>
+        </div>
+        <div class="stat-chip">
+          <span class="stat-label">置信度</span>
+          <span class="stat-value"><span class="counter" data-target="98.5" data-decimals="1">0</span>%</span>
+        </div>
+      </div>
+
+      <div class="detection-grid fade-in">
+        <!-- Detection Column -->
+        <div class="detection-col">
+          <h4 class="col-title">目标检测 Object Detection</h4>
+          <div class="detection-canvas">
+            <div class="det-scene">
+              <!-- Simulated detection boxes -->
+              <div class="det-box" style="top:8%;left:5%;width:28%;height:55%;">
+                <span class="det-tag">Person 0.97</span>
+              </div>
+              <div class="det-box det-box-car" style="top:50%;left:38%;width:30%;height:35%;">
+                <span class="det-tag">Car 0.95</span>
+              </div>
+              <div class="det-box det-box-bike" style="top:30%;left:70%;width:22%;height:40%;">
+                <span class="det-tag">Bicycle 0.91</span>
+              </div>
+              <div class="det-box" style="top:5%;left:55%;width:12%;height:25%;">
+                <span class="det-tag">Sign 0.88</span>
+              </div>
+              <div class="det-box det-box-car" style="top:55%;left:72%;width:24%;height:30%;">
+                <span class="det-tag">Car 0.93</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Segmentation Column -->
+        <div class="detection-col">
+          <h4 class="col-title">实例分割 Instance Segmentation</h4>
+          <div class="detection-canvas seg-canvas">
+            <div class="seg-scene">
+              <div class="seg-mask seg-mask-1"></div>
+              <div class="seg-mask seg-mask-2"></div>
+              <div class="seg-mask seg-mask-3"></div>
+              <div class="seg-mask seg-mask-4"></div>
+              <div class="seg-legend">
+                <span class="seg-legend-item"><i style="background:#4f46e5"></i>人物 Person</span>
+                <span class="seg-legend-item"><i style="background:#06b6d4"></i>车辆 Vehicle</span>
+                <span class="seg-legend-item"><i style="background:#10b981"></i>自行车 Bicycle</span>
+                <span class="seg-legend-item"><i style="background:#f59e0b"></i>路面 Road</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video Demo -->
+      <div class="video-demo fade-in">
+        <h4 class="col-title">视频演示 Video Demo</h4>
+        <div class="video-placeholder">
+          <div class="video-play-btn">
+            <svg viewBox="0 0 48 48" fill="currentColor">
+              <path d="M18 12l18 12-18 12z"/>
+            </svg>
+          </div>
+          <p class="video-text">实时检测演示 / Real-time Detection Demo</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FACE RECOGNITION ========== -->
+  <section class="section face" id="face">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2 class="section-title">智能人脸识别</h2>
+        <p class="section-subtitle-en">Intelligent Face Recognition</p>
+      </div>
+
+      <!-- Pipeline Diagram -->
+      <div class="face-pipeline fade-in">
+        <div class="pipeline-step">
+          <div class="pipeline-icon">
+            <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="4" y="4" width="32" height="32" rx="4"/>
+              <circle cx="20" cy="17" r="6"/>
+              <path d="M10 34c0-6 4-10 10-10s10 4 10 10"/>
+            </svg>
+          </div>
+          <span class="pipeline-label">输入图像<br><small>Input Image</small></span>
+        </div>
+        <div class="pipeline-arrow">&rarr;</div>
+        <div class="pipeline-step">
+          <div class="pipeline-icon">
+            <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="8" y="6" width="24" height="28" rx="3" stroke-dasharray="4 2"/>
+              <circle cx="20" cy="17" r="6"/>
+              <path d="M14 28h12"/>
+            </svg>
+          </div>
+          <span class="pipeline-label">人脸检测<br><small>Face Detection</small></span>
+        </div>
+        <div class="pipeline-arrow">&rarr;</div>
+        <div class="pipeline-step">
+          <div class="pipeline-icon">
+            <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="20" cy="17" r="8"/>
+              <circle cx="16" cy="15" r="1" fill="currentColor"/>
+              <circle cx="24" cy="15" r="1" fill="currentColor"/>
+              <circle cx="20" cy="19" r="0.8" fill="currentColor"/>
+              <circle cx="16" cy="22" r="0.8" fill="currentColor"/>
+              <circle cx="24" cy="22" r="0.8" fill="currentColor"/>
+              <path d="M14 28h12"/>
+            </svg>
+          </div>
+          <span class="pipeline-label">关键点提取<br><small>Landmark Extraction</small></span>
+        </div>
+        <div class="pipeline-arrow">&rarr;</div>
+        <div class="pipeline-step">
+          <div class="pipeline-icon">
+            <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="14" cy="16" r="6"/>
+              <circle cx="26" cy="16" r="6"/>
+              <path d="M18 12l4 0M18 20l4 0M18 16l4 0"/>
+              <path d="M20 28l-4-4h8z" fill="currentColor" opacity="0.3"/>
+            </svg>
+          </div>
+          <span class="pipeline-label">特征匹配<br><small>Feature Matching</small></span>
+        </div>
+        <div class="pipeline-arrow">&rarr;</div>
+        <div class="pipeline-step pipeline-step-result">
+          <div class="pipeline-icon">
+            <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="20" cy="15" r="7"/>
+              <path d="M10 34c0-6 4-10 10-10s10 4 10 10"/>
+              <path d="M14 15l4 4 8-8" stroke="#10b981" stroke-width="2.5"/>
+            </svg>
+          </div>
+          <span class="pipeline-label">身份确认<br><small>Identity</small></span>
+        </div>
+      </div>
+
+      <!-- Feature Badges -->
+      <div class="face-features fade-in">
+        <div class="feature-badge feature-badge-highlight">
+          <span class="feature-badge-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="20" height="20">
+              <circle cx="12" cy="10" r="5"/>
+              <path d="M5 22c0-4 3-7 7-7s7 3 7 7"/>
+              <path d="M8 13l8 2M8 15l8-2" opacity="0.5"/>
+            </svg>
+          </span>
+          口罩识别 Masked Face Recognition
+        </div>
+        <div class="feature-badge">
+          <span class="feature-badge-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="20" height="20">
+              <path d="M12 2l3 6 6 1-4 4 1 6-6-3-6 3 1-6-4-4 6-1z"/>
+            </svg>
+          </span>
+          活体检测 Liveness Detection
+        </div>
+        <div class="feature-badge">
+          <span class="feature-badge-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="20" height="20">
+              <rect x="3" y="3" width="18" height="18" rx="3"/>
+              <path d="M8 12l3 3 5-6"/>
+            </svg>
+          </span>
+          1:N 大库检索 Large-scale Search
+        </div>
+      </div>
+
+      <!-- Face Gallery -->
+      <div class="face-gallery fade-in">
+        <h4 class="col-title">识别人脸库 Face Gallery</h4>
+        <div class="gallery-grid">
+          <div class="face-item">
+            <div class="face-avatar"><span>A</span></div>
+            <span class="face-name">张伟 / Zhang Wei</span>
+            <span class="face-conf">99.8%</span>
+          </div>
+          <div class="face-item">
+            <div class="face-avatar"><span>B</span></div>
+            <span class="face-name">李娜 / Li Na</span>
+            <span class="face-conf">99.5%</span>
+          </div>
+          <div class="face-item">
+            <div class="face-avatar"><span>C</span></div>
+            <span class="face-name">王芳 / Wang Fang</span>
+            <span class="face-conf">99.3%</span>
+          </div>
+          <div class="face-item">
+            <div class="face-avatar"><span>D</span></div>
+            <span class="face-name">陈明 / Chen Ming</span>
+            <span class="face-conf">98.9%</span>
+          </div>
+          <div class="face-item">
+            <div class="face-avatar face-avatar-masked"><span>E</span><span class="mask-indicator">MASK</span></div>
+            <span class="face-name">刘洋 / Liu Yang</span>
+            <span class="face-conf">97.2%</span>
+          </div>
+          <div class="face-item">
+            <div class="face-avatar"><span>F</span></div>
+            <span class="face-name">赵丽 / Zhao Li</span>
+            <span class="face-conf">99.1%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== OCR ========== -->
+  <section class="section ocr" id="ocr">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2 class="section-title">多语言文字识别</h2>
+        <p class="section-subtitle-en">Multilingual OCR</p>
+      </div>
+
+      <div class="ocr-layout fade-in">
+        <!-- Document Preview -->
+        <div class="ocr-document">
+          <div class="ocr-doc-inner">
+            <div class="ocr-region ocr-region-1">
+              <span>深度学习技术白皮书</span>
+            </div>
+            <div class="ocr-region ocr-region-2">
+              <span>第一章 / Chapter 1: 神经网络基础</span>
+            </div>
+            <div class="ocr-region ocr-region-3">
+              <span>卷积神经网络(CNN)是一种前馈神经网络，它的人工神经元可以响应一部分覆盖范围内的周围单元。</span>
+            </div>
+            <div class="ocr-region ocr-region-4">
+              <span>Deep Learning has revolutionized computer vision, natural language processing, and many other fields.</span>
+            </div>
+            <div class="ocr-region ocr-region-5">
+              <span>Version 2.1 &nbsp; | &nbsp; 2024-03-15 &nbsp; | &nbsp; Synabro Tech</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- OCR Info -->
+        <div class="ocr-info">
+          <div class="ocr-accuracy">
+            <span class="ocr-accuracy-number counter" data-target="99.2" data-decimals="1">0</span>
+            <span class="ocr-accuracy-pct">%</span>
+            <span class="ocr-accuracy-label">识别准确率<br>Recognition Accuracy</span>
+          </div>
+          <div class="ocr-langs">
+            <h4>支持语言 Supported Languages</h4>
+            <div class="lang-badges">
+              <span class="lang-badge lang-badge-primary">中文</span>
+              <span class="lang-badge lang-badge-primary">English</span>
+              <span class="lang-badge lang-badge-primary">日本語</span>
+              <span class="lang-badge lang-badge-primary">한국어</span>
+              <span class="lang-badge">Deutsch</span>
+              <span class="lang-badge">Fran&ccedil;ais</span>
+              <span class="lang-badge">Espa&ntilde;ol</span>
+              <span class="lang-badge">Portugu&ecirc;s</span>
+              <span class="lang-badge">Русский</span>
+              <span class="lang-badge">العربية</span>
+              <span class="lang-badge lang-badge-more">+80 more</span>
+            </div>
+          </div>
+          <div class="ocr-features-list">
+            <div class="ocr-feat"><span class="ocr-feat-check">&check;</span> 手写体识别 Handwriting</div>
+            <div class="ocr-feat"><span class="ocr-feat-check">&check;</span> 表格提取 Table Extraction</div>
+            <div class="ocr-feat"><span class="ocr-feat-check">&check;</span> 竖排文字 Vertical Text</div>
+            <div class="ocr-feat"><span class="ocr-feat-check">&check;</span> 弯曲文字 Curved Text</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TECHNICAL SPECS ========== -->
+  <section class="section specs" id="specs">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2 class="section-title">技术规格</h2>
+        <p class="section-subtitle-en">Technical Specifications</p>
+      </div>
+
+      <!-- Chip Spec Card -->
+      <div class="spec-card fade-in">
+        <div class="spec-card-header">
+          <div class="spec-chip-visual">
+            <div class="chip-die">
+              <div class="chip-tile">T1</div>
+              <div class="chip-tile">T2</div>
+              <div class="chip-tile">T3</div>
+              <div class="chip-tile">T4</div>
+            </div>
+          </div>
+          <div class="spec-card-title">
+            <h3>DQ1 NPU</h3>
+            <p>Neural Processing Unit</p>
+          </div>
+        </div>
+        <div class="spec-table">
+          <div class="spec-row">
+            <span class="spec-key">架构 Architecture</span>
+            <span class="spec-val">4 Tiles &times; 8 Cores</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-key">精度 Precision</span>
+            <span class="spec-val">INT8 / INT16</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-key">功耗 Power</span>
+            <span class="spec-val highlight-amber">&lt; 2W</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-key">延迟 Latency</span>
+            <span class="spec-val highlight-amber">&lt; 5ms</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-key">接口 Interface</span>
+            <span class="spec-val">PCIe / USB</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Benchmark Table -->
+      <div class="benchmark-section fade-in">
+        <h3 class="subsection-title">性能基准 Performance Benchmarks</h3>
+        <div class="benchmark-table-wrap">
+          <table class="benchmark-table">
+            <thead>
+              <tr>
+                <th>模型 Model</th>
+                <th>分辨率 Resolution</th>
+                <th>帧率 FPS</th>
+                <th>延迟 Latency</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><span class="model-tag">YOLOv8n</span></td>
+                <td>640&times;640</td>
+                <td class="fps-cell"><span class="counter" data-target="120">0</span>+</td>
+                <td>8.3ms</td>
+              </tr>
+              <tr>
+                <td><span class="model-tag">Real-ESRGAN</span></td>
+                <td>480&rarr;1920</td>
+                <td class="fps-cell"><span class="counter" data-target="30">0</span>+</td>
+                <td>33ms</td>
+              </tr>
+              <tr>
+                <td><span class="model-tag">SCRFD</span></td>
+                <td>640&times;480</td>
+                <td class="fps-cell"><span class="counter" data-target="200">0</span>+</td>
+                <td>5ms</td>
+              </tr>
+              <tr>
+                <td><span class="model-tag">PP-OCR</span></td>
+                <td>Variable</td>
+                <td class="fps-cell"><span class="counter" data-target="50">0</span>+</td>
+                <td>20ms</td>
+              </tr>
+              <tr>
+                <td><span class="model-tag">MobileFaceNet</span></td>
+                <td>112&times;112</td>
+                <td class="fps-cell"><span class="counter" data-target="500">0</span>+</td>
+                <td>2ms</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Power Comparison -->
+      <div class="power-section fade-in">
+        <h3 class="subsection-title">功耗对比 Power Comparison</h3>
+        <div class="power-bars">
+          <div class="power-bar-row">
+            <span class="power-label">DQ1 NPU</span>
+            <div class="power-bar-track">
+              <div class="power-bar power-bar-dq1" data-width="2" data-max="250">
+                <span class="power-val">2W</span>
+              </div>
+            </div>
+          </div>
+          <div class="power-bar-row">
+            <span class="power-label">CPU</span>
+            <div class="power-bar-track">
+              <div class="power-bar power-bar-cpu" data-width="65" data-max="250">
+                <span class="power-val">65W</span>
+              </div>
+            </div>
+          </div>
+          <div class="power-bar-row">
+            <span class="power-label">GPU</span>
+            <div class="power-bar-track">
+              <div class="power-bar power-bar-gpu" data-width="250" data-max="250">
+                <span class="power-val">250W</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="power-note">DQ1 功耗仅为 GPU 的 <strong class="highlight-amber">0.8%</strong>，实现同等推理性能</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <span class="footer-logo"><span class="logo-mark">S</span>YNABRO</span>
+          <p>Synabro Technology &middot; 思纳博科技</p>
+        </div>
+        <div class="footer-info">
+          <p>Powered by DQ1 Neural Processing Unit</p>
+          <p class="footer-contact">contact@synabro.com &nbsp;|&nbsp; www.synabro.com</p>
+        </div>
+        <div class="footer-copy">
+          <p>&copy; 2024 Synabro Technology. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
