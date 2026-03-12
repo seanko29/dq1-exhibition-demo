@@ -1664,3 +1664,50 @@ img { max-width: 100%; display: block; }
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(79, 70, 229, 0.6);
 }
+
+/* ===== Real Image Results ===== */
+.comparison-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.result-img {
+  width: 100%;
+  border-radius: 12px;
+  display: block;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.result-label {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.detection-canvas .result-img {
+  border-radius: 8px;
+}
+
+.face-result-grid,
+.ocr-result-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.face-result-col,
+.ocr-result-col {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  .face-result-grid,
+  .ocr-result-grid {
+    grid-template-columns: 1fr;
+  }
+}
