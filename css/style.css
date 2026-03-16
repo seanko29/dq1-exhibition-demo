@@ -141,27 +141,12 @@ img { max-width: 100%; display: block; }
   align-items: center;
 }
 
-.logo-text {
-  display: inline;
-  letter-spacing: 0.18em;
-}
-
-.logo-red,
-.logo-blue,
-.logo-transition {
-  letter-spacing: 0;
-  margin: 0;
-  padding: 0;
-}
-
 .logo-red {
   color: #c41230;
-  letter-spacing: 0.18em;
 }
 
 .logo-blue {
   color: #1a3e8a;
-  letter-spacing: 0.18em;
 }
 
 .logo-transition {
