@@ -143,17 +143,7 @@ img { max-width: 100%; display: block; }
 }
 
 .logo-mark {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 28px;
-  height: 28px;
-  border-radius: 6px;
-  background: linear-gradient(135deg, var(--grad-start), var(--grad-end));
-  color: #fff;
-  font-size: 0.85rem;
-  font-weight: 900;
-  margin-right: 0.5rem;
+  font-weight: 800;
 }
 
 .nav-links {
