@@ -184,7 +184,7 @@
           <button class="sr-tab active" data-sr-idx="0">Anime</button>
           <button class="sr-tab" data-sr-idx="1">Actress</button>
           <button class="sr-tab" data-sr-idx="2">Idol</button>
-          <button class="sr-tab" data-sr-idx="3">Receipt</button>
+          <button class="sr-tab" data-sr-idx="3">Aespa</button>
           <button class="sr-tab" data-sr-idx="4">Baby</button>
           <button class="sr-tab" data-sr-idx="5">CCTV Road</button>
         </div>
@@ -229,10 +229,10 @@
 
           <div class="comparison-slider sr-slide" data-sr-idx="3">
             <div class="comparison-before">
-              <img src="assets/sr/chinese_receipt.png" alt="Receipt low-res" class="comparison-img">
+              <img src="assets/sr/aespa.jpg" alt="Aespa low-res" class="comparison-img">
             </div>
             <div class="comparison-after">
-              <img src="assets/sr/chinese_receipt_sr.png" alt="Receipt super-resolution" class="comparison-img">
+              <img src="assets/sr/aespa_sr.jpg" alt="Aespa super-resolution" class="comparison-img">
             </div>
             <div class="comparison-handle"><div class="handle-line"></div><div class="handle-circle">&lsaquo; &rsaquo;</div></div>
             <div class="comparison-label-before">BEFORE 处理前</div>
@@ -328,14 +328,23 @@
         </div>
       </div>
 
-      <!-- Video Demo -->
+      <!-- Video Comparison Demo -->
       <div class="video-demo fade-in">
-        <h4 class="col-title">视频演示 Video Demo — Object Detection + Segmentation</h4>
-        <div class="video-container">
-          <video autoplay loop muted playsinline class="demo-video">
-            <source src="assets/video/aespa_detection.webm" type="video/webm">
-            <img src="assets/video/aespa_detection.gif" alt="Detection video demo">
-          </video>
+        <h4 class="col-title">视频演示 Video Demo — Original vs Detection + Segmentation</h4>
+        <div class="comparison-slider video-comparison-slider">
+          <div class="comparison-before">
+            <video autoplay loop muted playsinline class="comparison-video" data-sync="detection">
+              <source src="assets/video/aespa_original.webm" type="video/webm">
+            </video>
+          </div>
+          <div class="comparison-after">
+            <video autoplay loop muted playsinline class="comparison-video" data-sync="detection">
+              <source src="assets/video/aespa_detection.webm" type="video/webm">
+            </video>
+          </div>
+          <div class="comparison-handle"><div class="handle-line"></div><div class="handle-circle">&lsaquo; &rsaquo;</div></div>
+          <div class="comparison-label-before">ORIGINAL 原始</div>
+          <div class="comparison-label-after">DETECTION 检测</div>
         </div>
       </div>
     </div>
@@ -458,14 +467,23 @@
         </div>
       </div>
 
-      <!-- Face Video Demo -->
+      <!-- Face Video Comparison Demo -->
       <div class="video-demo fade-in">
-        <h4 class="col-title">视频演示 Video Demo — Face Detection + Recognition</h4>
-        <div class="video-container">
-          <video autoplay loop muted playsinline class="demo-video">
-            <source src="assets/video/aespa_face.webm" type="video/webm">
-            <img src="assets/video/aespa_face.gif" alt="Face detection video demo">
-          </video>
+        <h4 class="col-title">视频演示 Video Demo — Original vs Face Detection</h4>
+        <div class="comparison-slider video-comparison-slider">
+          <div class="comparison-before">
+            <video autoplay loop muted playsinline class="comparison-video" data-sync="face">
+              <source src="assets/video/aespa_original.webm" type="video/webm">
+            </video>
+          </div>
+          <div class="comparison-after">
+            <video autoplay loop muted playsinline class="comparison-video" data-sync="face">
+              <source src="assets/video/aespa_face.webm" type="video/webm">
+            </video>
+          </div>
+          <div class="comparison-handle"><div class="handle-line"></div><div class="handle-circle">&lsaquo; &rsaquo;</div></div>
+          <div class="comparison-label-before">ORIGINAL 原始</div>
+          <div class="comparison-label-after">DETECTION 检测</div>
         </div>
       </div>
     </div>

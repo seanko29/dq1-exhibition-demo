@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
   initCounters();
   initPowerBars();
   initActiveNav();
+  initVideoSync();
 
 });
 
@@ -319,4 +320,41 @@ function initActiveNav() {
   });
 
   sections.forEach(function (section) { observer.observe(section); });
+}
+
+/* ============================================================
+   8. VIDEO SYNC — keep before/after videos in sync
+   ============================================================ */
+function initVideoSync() {
+  var sliders = document.querySelectorAll('.video-comparison-slider');
+  if (!sliders.length) return;
+
+  sliders.forEach(function (slider) {
+    var videos = slider.querySelectorAll('video');
+    if (videos.length < 2) return;
+
+    var before = videos[0];
+    var after = videos[1];
+
+    // Sync playback: when one seeks or plays, match the other
+    after.addEventListener('play', function () {
+      before.currentTime = after.currentTime;
+      before.play();
+    });
+
+    before.addEventListener('seeked', function () {
+      if (Math.abs(after.currentTime - before.currentTime) > 0.1) {
+        after.currentTime = before.currentTime;
+      }
+    });
+
+    // Periodic sync every 2 seconds to prevent drift
+    setInterval(function () {
+      if (!before.paused && !after.paused) {
+        if (Math.abs(before.currentTime - after.currentTime) > 0.15) {
+          after.currentTime = before.currentTime;
+        }
+      }
+    }, 2000);
+  });
 }
