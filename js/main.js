@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
   initSmoothScroll();
   initScrollAnimations();
   initComparisonSliders();
+  initSRTabs();
   initCounters();
   initPowerBars();
   initActiveNav();
@@ -141,6 +142,38 @@ function initComparisonSliders() {
 
     document.addEventListener('touchend', function () {
       isDragging = false;
+    });
+  });
+}
+
+/* ============================================================
+   4b. SR IMAGE TABS — switch between SR before/after pairs
+   ============================================================ */
+function initSRTabs() {
+  var tabs = document.querySelectorAll('.sr-tab');
+  var slides = document.querySelectorAll('.sr-slide');
+  if (!tabs.length || !slides.length) return;
+
+  tabs.forEach(function (tab) {
+    tab.addEventListener('click', function () {
+      var idx = tab.getAttribute('data-sr-idx');
+
+      // Update active tab
+      tabs.forEach(function (t) { t.classList.remove('active'); });
+      tab.classList.add('active');
+
+      // Show matching slide, hide others
+      slides.forEach(function (slide) {
+        if (slide.getAttribute('data-sr-idx') === idx) {
+          slide.classList.add('active');
+          slide.style.setProperty('--pos', '50%');
+        } else {
+          slide.classList.remove('active');
+        }
+      });
+
+      // Re-init slider for the newly visible slide
+      initComparisonSliders();
     });
   });
 }

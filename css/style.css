@@ -587,6 +587,54 @@ img { max-width: 100%; display: block; }
   color: var(--text-primary);
 }
 
+/* SR Tabs */
+.sr-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.sr-tab {
+  padding: 0.45rem 1rem;
+  border: 1px solid var(--border-card);
+  border-radius: 100px;
+  background: var(--bg-card-alpha);
+  color: var(--text-secondary);
+  font-size: 0.78rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.25s;
+  font-family: var(--font-body);
+  letter-spacing: 0.02em;
+}
+
+.sr-tab:hover {
+  border-color: var(--grad-start);
+  color: var(--text-primary);
+}
+
+.sr-tab.active {
+  background: linear-gradient(135deg, var(--grad-start), var(--grad-end));
+  border-color: var(--grad-start);
+  color: #fff;
+  font-weight: 600;
+}
+
+/* SR Slider Group */
+.sr-slider-group {
+  position: relative;
+}
+
+.sr-slide {
+  display: none;
+}
+
+.sr-slide.active {
+  display: block;
+}
+
 /* Slider handle */
 .comparison-handle {
   position: absolute;
