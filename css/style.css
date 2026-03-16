@@ -865,56 +865,27 @@ img { max-width: 100%; display: block; }
   margin-top: 2rem;
 }
 
-.video-placeholder {
+.video-container {
   position: relative;
   width: 100%;
   max-width: 900px;
   margin: 0 auto;
-  aspect-ratio: 16 / 9;
-  background:
-    radial-gradient(ellipse at center, rgba(79, 70, 229, 0.06), transparent 60%),
-    linear-gradient(135deg, #111122, #151530);
   border: 1px solid var(--border-card);
   border-radius: 12px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  cursor: pointer;
-  transition: border-color 0.3s;
+  overflow: hidden;
+  background: linear-gradient(135deg, #111122, #151530);
 }
 
-.video-placeholder:hover {
-  border-color: var(--grad-start);
+.demo-video {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
 }
 
-.video-play-btn {
-  width: 64px;
-  height: 64px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, var(--grad-start), var(--grad-end));
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 8px 30px rgba(79, 70, 229, 0.3);
-  transition: transform 0.3s;
-}
-
-.video-placeholder:hover .video-play-btn {
-  transform: scale(1.1);
-}
-
-.video-play-btn svg {
-  width: 28px;
-  height: 28px;
-  color: #fff;
-  margin-left: 3px;
-}
-
-.video-text {
-  font-size: 0.85rem;
-  color: var(--text-secondary);
+.demo-video img {
+  width: 100%;
+  height: auto;
 }
 
 /* ============================================================
