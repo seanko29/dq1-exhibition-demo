@@ -139,17 +139,21 @@ img { max-width: 100%; display: block; }
   text-transform: uppercase;
   display: flex;
   align-items: center;
-  gap: 0.7rem;
+}
+
+.logo-red {
+  color: #c41230;
+}
+
+.logo-blue {
+  color: #1a3e8a;
+}
+
+.logo-transition {
   background: linear-gradient(90deg, #c41230, #1a3e8a);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-}
-
-.nav-logo img.partner-logo {
-  height: 22px;
-  width: auto;
-  opacity: 0.9;
 }
 
 .nav-links {
@@ -1532,12 +1536,6 @@ img { max-width: 100%; display: block; }
 .footer-logos {
   display: flex;
   align-items: center;
-  gap: 0.7rem;
-}
-
-.footer-partner-logo {
-  height: 24px;
-  width: auto;
 }
 
 .footer-logo {
@@ -1545,10 +1543,6 @@ img { max-width: 100%; display: block; }
   font-weight: 800;
   font-size: 1rem;
   letter-spacing: 0.15em;
-  background: linear-gradient(90deg, #c41230, #1a3e8a);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
 }
 
 .footer-brand p {
