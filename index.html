@@ -24,6 +24,7 @@
         <li><a href="#face">人脸识别</a></li>
         <li><a href="#ocr">文字识别</a></li>
         <li><a href="#specs">技术规格</a></li>
+        <li><a href="#resources">展厅资料</a></li>
       </ul>
       <div class="nav-lang">中 / EN</div>
     </div>
@@ -648,6 +649,67 @@
     </div>
   </section>
 
+  <!-- ========== EXHIBITION RESOURCES ========== -->
+  <section class="section resources" id="resources">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2 class="section-title">展厅资料</h2>
+        <p class="section-subtitle-en">Exhibition Resources</p>
+      </div>
+
+      <!-- Poster + Leaflet cards -->
+      <div class="resources-grid fade-in">
+        <a class="resource-card" href="assets/aim-future-poster.jpg" target="_blank" rel="noopener">
+          <div class="resource-thumb">
+            <img src="assets/aim-future-poster-thumb.jpg" alt="AiM Future 海报 Poster" loading="lazy">
+          </div>
+          <div class="resource-meta">
+            <h3 class="resource-title">展会海报 <span>Poster</span></h3>
+            <p class="resource-desc">AiM Future · GAIA 生成式 AI 架构</p>
+            <span class="resource-link">查看大图 View &rarr;</span>
+          </div>
+        </a>
+
+        <a class="resource-card" href="assets/aim-future-leaflet.pdf" target="_blank" rel="noopener">
+          <div class="resource-thumb resource-thumb-pdf">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M14 4h14l8 8v32H14z"/>
+              <path d="M28 4v8h8"/>
+              <text x="24" y="34" text-anchor="middle" font-size="9" font-weight="700" fill="currentColor" stroke="none">PDF</text>
+            </svg>
+          </div>
+          <div class="resource-meta">
+            <h3 class="resource-title">产品手册 <span>Leaflet</span></h3>
+            <p class="resource-desc">AiM Future 中文版 · 2026.5.20</p>
+            <span class="resource-link">打开 PDF Open &rarr;</span>
+          </div>
+        </a>
+      </div>
+
+      <!-- QR codes -->
+      <div class="qr-block fade-in">
+        <h3 class="subsection-title">扫码获取 Scan to Access</h3>
+        <div class="qr-grid">
+          <div class="qr-card">
+            <div class="qr-canvas" data-qr="page"></div>
+            <h4 class="qr-title">演示页面</h4>
+            <p class="qr-title-en">Demo Page</p>
+          </div>
+          <div class="qr-card">
+            <div class="qr-canvas" data-qr="asset" data-asset="assets/aim-future-poster.jpg"></div>
+            <h4 class="qr-title">展会海报</h4>
+            <p class="qr-title-en">Poster</p>
+          </div>
+          <div class="qr-card">
+            <div class="qr-canvas" data-qr="asset" data-asset="assets/aim-future-leaflet.pdf"></div>
+            <h4 class="qr-title">产品手册</h4>
+            <p class="qr-title-en">Leaflet PDF</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- ========== FOOTER ========== -->
   <footer class="footer">
     <div class="container">
@@ -667,6 +729,7 @@
     </div>
   </footer>
 
+  <script src="js/qrcode.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
