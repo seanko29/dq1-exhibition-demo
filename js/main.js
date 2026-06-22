@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
   initPowerBars();
   initActiveNav();
   initVideoSync();
+  initQRCodes();
 
 });
 
@@ -356,5 +357,35 @@ function initVideoSync() {
         }
       }
     }, 2000);
+  });
+}
+
+/* ============================================================
+   QR CODES — generated client-side (offline, no network)
+   Resolves absolute URLs from window.location so the codes work
+   wherever the site is deployed. data-qr="page" encodes the demo
+   page itself; data-qr="asset" encodes the file in data-asset.
+   ============================================================ */
+function initQRCodes() {
+  var canvases = document.querySelectorAll('.qr-canvas');
+  if (!canvases.length || typeof qrcode === 'undefined') return;
+
+  // Strip query/hash so the demo-page code points at a clean URL.
+  var pageUrl = window.location.origin + window.location.pathname;
+
+  canvases.forEach(function (el) {
+    var url;
+    if (el.getAttribute('data-qr') === 'asset') {
+      // Resolve the asset path against the current page to an absolute URL.
+      url = new URL(el.getAttribute('data-asset'), pageUrl).href;
+    } else {
+      url = pageUrl;
+    }
+
+    var qr = qrcode(0, 'M');          // type 0 = auto-size, ECC level M
+    qr.addData(url);
+    qr.make();
+    el.innerHTML = qr.createSvgTag({ cellSize: 5, margin: 2, scalable: true });
+    el.setAttribute('title', url);
   });
 }
