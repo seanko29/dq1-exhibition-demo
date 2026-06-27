@@ -1,5 +1,5 @@
 /* ============================================================
-   DQ1 AI Vision Engine — Exhibition Demo Scripts
+   GAIA AI Vision Engine — Exhibition Demo Scripts
    Synabro Technology
    Pure JS — No dependencies
    ============================================================ */

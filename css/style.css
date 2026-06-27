@@ -1,5 +1,5 @@
 /* ============================================================
-   DQ1 AI Vision Engine — Exhibition Demo Stylesheet
+   GAIA AI Vision Engine — Exhibition Demo Stylesheet
    Synabro Technology
    ============================================================ */
 
@@ -1488,7 +1488,7 @@ img { max-width: 100%; display: block; }
   /* width set by JS */
 }
 
-.power-bar-dq1 {
+.power-bar-gaia {
   background: linear-gradient(90deg, var(--grad-start), var(--accent-cyan));
   min-width: 60px;
 }
@@ -1746,10 +1746,13 @@ img { max-width: 100%; display: block; }
 }
 
 .qr-card {
+  display: block;
   padding: 1.5rem 1rem;
   background: var(--bg-card-alpha);
   border: 1px solid var(--border-card);
   border-radius: 16px;
+  color: inherit;
+  text-decoration: none;
   transition: transform 0.35s, border-color 0.35s;
 }
 
